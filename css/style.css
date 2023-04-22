@@ -1,0 +1,255 @@
+@font-face {
+    font-family: "proximanova";
+    src: url(../font/Fontspring-DEMO-proximanova-regular.otf);
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Alegreya', serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #000;
+    font-style: normal;
+    background-color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a.btn:focus,
+button.btn:focus,
+a:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+
+/* Start Css For Header */
+header {
+    background-color: #71726f99;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 999;
+}
+
+a.nav-link {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+a.nav-link:hover,
+a.nav-link:focus,
+a.social-link:hover,
+a.social-link:focus {
+    color: #fff;
+}
+
+ul.navbar-nav li {
+    position: relative;
+    padding-inline: 40px;
+}
+
+ul.navbar-nav li+li::before {
+    content: "~";
+    position: absolute;
+    color: #fff;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0px;
+}
+
+a.navbar-brand {
+    padding-block: 0px;
+}
+
+.nav-social-link ul {
+    gap: 30px;
+}
+
+.social-link {
+    color: #fff;
+    font-size: 16px;
+}
+
+/* End Css For Header */
+
+
+
+/* Start Css for Slider Section */
+button.carousel-control-prev,
+button.carousel-control-next,
+.carousel-indicators {
+    display: none;
+}
+section.carousel-wrapper{
+    position: relative;
+}
+.carousel-content {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 99;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+section.carousel-wrapper::after {
+	content: "";
+	width: 100%;
+	height: 100%;
+	background-color: #00000059;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	z-index: 90;
+}
+.carousel-content h1 {
+    font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	font-size: 90px;
+	color: #fff;
+	letter-spacing: 1px;
+	margin-bottom: 55px;
+}
+.line {
+	display: inline-flex;
+	width: 100%;
+	justify-content: center;
+	margin-bottom: 70px;
+}
+.carousel-content p {
+	font-family: "proximanova";
+	color: #fff;
+	font-size: 24px;
+	margin-bottom: 70px;
+	line-height: 30px;
+}
+.custom-btn {
+	background-color: RGBA(158, 156, 147, 1);
+	border: 1px solid RGBA(0,0,0,0);
+	padding: 15px 44px;
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.custom-btn:hover{
+    color:#fff;
+}
+.carousel-item img {
+	height: 600px;
+	width: 100%;
+	object-fit: cover;
+}
+.slider-icon {
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: -53px;
+	z-index: 99;
+}
+.slider-icon-content{
+position: relative;
+}
+.slider-icon-detail {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #fff;
+	border-radius: 50%;
+	width: 75px;
+	height: 75px;
+}
+/* End Css for Slider section */
+
+
+/* Start css for cake-wrapper */
+section.cake-wrapper{
+	margin-top:43px;
+	padding-block:50px;
+}
+.cake-cover-images img {
+	width: 100%;
+	height: 250px;
+	object-fit: cover;
+}
+.cake-cover-images{
+	margin-bottom:25px;
+	position: relative;
+}
+.cake-cover-images::after {
+	content: "";
+	width: 90%;
+	height: 90%;
+	position: absolute;
+	border: 8px solid #fff;
+	top: 13px;
+	left: 14px;
+}
+.cake-wrapper-cover{
+	position: relative;
+}
+.cake-wrapper-cover-images {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.cake-wrapper-detail h2 {
+	font-weight: 700;
+	font-size: 40px;
+	color: #82807b;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	line-height: 36px;
+	margin-bottom: 70px;
+}
+.cake-wrapper-detail h2 span {
+	font-size: 20px;
+	color: #b19279;
+}
+.cake-wrapper-detail p {
+	font-family: "proximanova";
+	text-align: center;
+	line-height: 20px;
+	font-size: 14px;
+	color: #56534C;
+	margin-bottom: 45px;
+}
+.cakerWrapper-content h3 {
+	font-weight: 700;
+	font-size: 24px;
+	color: #56534C;
+	text-align: center;
+	margin-bottom: 40px;
+	text-transform: capitalize;
+}
+/* End Css for cake-wrapper */
